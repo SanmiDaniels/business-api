@@ -1,17 +1,19 @@
 package com.sdssd.businessapi.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
-import com.sdssd.businessapi.repository.BusinessRepository;
+import com.sdssd.businessapi.model.Business;
 
 @Service
-public class BusinessService {
+public interface BusinessService {
 
-	@Autowired
-	private BusinessRepository bussinessRepo;
+
+	Optional<Business> findByRC(String rc);
 	
+	boolean businessExistsByName(String name);
 	
-	
+	boolean rcAndNameMatches(String rc, String name);
 	
 }

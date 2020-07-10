@@ -12,8 +12,12 @@ import org.hibernate.annotations.Type;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
-@Table(name = "business")
+@Table(name = "bussiness")
+@ApiModel( value = "Business", description = "A resource representation of a business registered with cac.gov.ng" )
 public class Business {
 
     @Id
@@ -23,13 +27,16 @@ public class Business {
     @Type(type = "org.hibernate.type.UUIDCharType")
     private UUID id;
     
-    
+    @ApiModelProperty( value = "Business RC number assigned upon registartion", required = true )
     private String rcnumber;
     
+    @ApiModelProperty( value = "Name of the business/Company registered", required = true )
     private String companyname;
     
+    @ApiModelProperty( value = "Address of the business", required = true )
     private String address;
     
+    @ApiModelProperty( value = "Date at which business is formally registered. Format is yy-mm-dd", required = true )
     private String dateOfReg;
 
     

@@ -3,6 +3,7 @@ package com.sdssd.businessapi.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -20,19 +21,19 @@ public class SpringFoxConfig {
 	@Bean
 	public Docket api() {
 
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.basePackage("com.sdssd.businessapi.controller"))
 				.paths(PathSelectors.any()).build().apiInfo(apiEndPointsInfo()).pathMapping("/");
 	}
 
 	private ApiInfo apiEndPointsInfo() {
-		
-		String desc = "RESTful endpoints to validate Nigerian Business by their RC numbers. All data used in this project are gotten from "
+
+		String desc = "RESTful endpoints to identify Nigerian Businesses by their RC numbers and others."
+				+ " All data used in this project are gotten from "
 				+ "public search at cac.gov.ng and are valid as at 05/07/2020";
-		
-		
-		return new ApiInfoBuilder().title("Business Validation API").description(desc)
-				.license("Apache 2.0").licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html").version("1.0.0")
-				.build();
+
+		return new ApiInfoBuilder().title("Business Validation API").description(desc).license("Apache 2.0")
+				.licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html").version("1.0.0").build();
 	}
 
 }
