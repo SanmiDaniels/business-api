@@ -14,13 +14,13 @@ import com.sdssd.businessapi.model.Business;
 @RepositoryRestResource(exported = false)
 public interface BusinessRepository extends JpaRepository<Business, UUID> {
 
-    @Query(value = "select * from bussiness where rcnumber = :rc", nativeQuery = true)
+    @Query(value = "select * from business where rcnumber = :rc", nativeQuery = true)
 	Business findByRCNumber(@Param("rc") String rc);
 	
-    @Query(value = "select * from bussiness where rcnumber = :rc && companyname = :name", nativeQuery = true)
+    @Query(value = "select * from business where rcnumber = :rc && companyname = :name", nativeQuery = true)
 	Business findByRcAndName(@Param("rc") String rc, @Param("name") String name);
 	
-    @Query(value = "select * from bussiness where companyname = :name", nativeQuery = true)
+    @Query(value = "select * from business where companyname = :name", nativeQuery = true)
     Business findByName(@Param("name") String name);
     
 }

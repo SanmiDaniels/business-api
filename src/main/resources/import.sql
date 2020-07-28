@@ -1,45 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.0.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Jul 10, 2020 at 04:51 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `buss`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `bussiness`
---
-
-CREATE TABLE `business` (
-  `id` varchar(255) NOT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `companyname` varchar(255) DEFAULT NULL,
-  `date_of_reg` varchar(255) DEFAULT NULL,
-  `rcnumber` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `bussiness`
---
-
 INSERT INTO `business` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
 ('0020eea4-197d-4903-a7a9-a4ffb11d52bb', 'C/O,BASSLETONELLIOT&CO.1633HIGHST,ENUGU,ENUGU', 'FARAH FILM SERVICES LTD', '1957-06-28', '1527'),
 ('004b3a9c-0c9f-4158-bdf4-0abaab0fe63b', '88/92,YAKUBUGOWONSTR,,LAGOS,LAGOS', 'ZARIA CONCRETE BLOCKS INDUSTRY LTD', '1971-01-23', '8103'),
@@ -431,7 +389,7 @@ INSERT INTO `business` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber
 ('462025ad-a554-4e63-8a5f-3fec90d77d6b', 'HOUSE 5, CLOSE 47, SATELLITE TOWN , LAGOS ,LAGOS', 'U - CUBE DYNAMIC LTD', '2011-02-21', '937621'),
 ('46913af3-0d77-452f-8375-059f83cfe784', '60,CEMETARYRD.,WARRI,WARRI,DELTA', 'MAFELT NIGERIAN LTD', '1972-07-05', '1032'),
 ('46b12936-e001-4b2a-b6a4-374ff57747be', 'NOTSTATED', 'J.L. MORISON SONS ANDJONES (NIG) LTD', '1986-03-24', '658');
-INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
+INSERT INTO `business` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
 ('46ee8008-8e75-4f4c-9572-e2e736381311', 'C/OC.F.A.O.BOX16O,,LAGOS,LAGOS', 'PRE-STRESSED CONCRETE COMPANY LTD', '1965-01-15', '1135'),
 ('47251eba-d499-470b-9ecf-31a33d638850', '96,DENTONSTREET,EBUTEMETTA,LAGOS', 'LAGOS (THE) MORTGAGE AND INVESTMENT CO. LTD', '1933-06-09', '360'),
 ('473a72a6-6be2-43de-a768-381578578b10', '18/19,ABONNEMAWHARFROAD,PORTHARCOURT,RIVERS', 'MONIER CONSTRUCTION COMPANY (NIGERIA) LIMITED', '1982-02-15', '1508'),
@@ -824,7 +782,7 @@ INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumbe
 ('96e70707-9379-4dc6-83c0-b53d788df1a5', '10,ZARIAROAD,,JOS,PLATEAU', 'KABBA MINES LIMITED', '1962-11-24', '3224'),
 ('972c2859-8b25-45a9-8c1e-2a40176eea0f', '2,OLDDOCKROAD,P.O.BOX341,PAPA,LAGOS,LAGOS', 'FLOUR MILLS OF NIGERIA PLC', '1960-09-29', '2343'),
 ('98357cb0-e4b4-4184-a3ee-95d1bd32afeb', '8,OKPARAAVENUE,,ENUGU,ENUGU', 'E.M. MICHELETTI AND SONS NIG LTD', '1951-03-31', '1304');
-INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
+INSERT INTO `business` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
 ('983aa2ca-79f4-4636-8b32-6d205e51882b', '298, KANI-SUURU HOUSE, LAGOS ROAD SAWMILL AREA', 'U - DUB INFORMATION TECHNOLOGY', '2015-10-22', '2370404'),
 ('988af45e-f791-4702-ac1b-e4c12fdf18ff', 'NOTSTATED', 'BAR LOW MINE LTD', '1971-01-13', '1488'),
 ('99011335-ecdb-4310-81bd-206e9fbf6fa3', 'NOTSTATED', 'SOCIETE ARVON YME HERSENT LTD', 'NOTSTATED', '1272'),
@@ -1218,7 +1176,7 @@ INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumbe
 ('e888064f-d444-4cba-8f32-8cc0688d3e66', 'PRINCESHOUSE,TINUBUSQ.,LAGOS,LAGOS', 'SANCO CONSOLIDATED (NIG) LTD', '1958-03-07', '1643'),
 ('e89faeff-5cf6-4f41-a546-5a02f9687f73', '10,SCOTTSTR.,LAGOS,LAGOS', 'BRITISH AND OVERSEAS CREDIT LTD', '1958-08-08', '1733'),
 ('e8c3754d-e6cf-41bb-af08-552942c84b8e', 'NOTSTATED', 'ANGLO AFRICAN AERATED WATERS LTD', 'NOTSTATED', '296');
-INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
+INSERT INTO `business` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumber`) VALUES
 ('e959df03-35eb-41fe-80f2-2faa726b4b69', 'N0.35,MISSIONROAD,BENINCITY,EDO', 'U - BORAH NIG LTD', '2011-07-19', '966575'),
 ('e960ef5b-5e39-4436-86b8-afafa95f8b5d', '1, AWOLOLA CLOSE,ONIKE , LAGOS,LAGOS', 'U - CAN CONSULT', '1991-09-12', '799446'),
 ('e99d46a6-e38a-4ea2-b0f1-eef8562e5daa', 'HARBOURRD.APAPA,LAGOS,LAGOS', 'MARINE COLD STORAGE LTD', '1955-02-26', '1231'),
@@ -1344,18 +1302,3 @@ INSERT INTO `bussiness` (`id`, `address`, `companyname`, `date_of_reg`, `rcnumbe
 ('ffb3ddb8-fe58-4f21-96dc-0675702368be', '33,TOWNPLANNINGWAY,ILUPEJU,LAGOS,LAGOS', 'PZ CUSSONS NIGERIA PLC', '1948-12-04', '693'),
 ('ffb61001-084f-43b3-a665-7301d0a53e8d', 'AYEYEMARKET,IBADAN,OYO', 'SALAMI AGBAJE & CO. LTD', '1954-09-01', '1187'),
 ('ffd06556-ec97-4434-bb66-aafe5ec09d05', '88/92,BROADSTR.,LAGOS,LAGOS', 'LAW UNION & ROCK INSUR LTD', '1959-06-02', '1034');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `bussiness`
---
-ALTER TABLE `business`
-  ADD PRIMARY KEY (`id`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

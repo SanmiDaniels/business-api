@@ -16,7 +16,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @Entity
-@Table(name = "bussiness")
+@Table(name = "business")
 @ApiModel( value = "Business", description = "A resource representation of a business registered with cac.gov.ng" )
 public class Business {
 
