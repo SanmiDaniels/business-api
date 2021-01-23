@@ -6,7 +6,8 @@ Doing business in Nigeria is difficult alright. Doing business with businesses i
 - Checks if a company exists by name
 - Checks if a cmopany name and RC number matches
 
-Head over here to check out these endpoints and see how you can use them.
+## Documentation
+Head over here to check out these endpoints and see how you can use them.[Link To Documentation](https://documenter.getpostman.com/view/14303989/TW6tKpKi#b51049e8-d111-4d29-b1ed-50fd105a8ae6) 
 
 ## NB; All data used in this project are gotten from public search at https://publicsearch.cac.gov.ng/ComSearch/index.php and are valid as at 05/07/2020
 

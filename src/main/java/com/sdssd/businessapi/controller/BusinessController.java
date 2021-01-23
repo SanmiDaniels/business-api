@@ -29,7 +29,7 @@ public class BusinessController {
 	@ApiOperation( 
 		    value = "Finds a business by RC number", 
 		    notes = "Though the RC value is seemingly a number, a string is used"
-		    		+ " here to accomadates values with characters mixed with numbers", 
+		    		+ " here to accommodates values with characters mixed with numbers", 
 		    response = Business.class
 		)
 	public ResponseEntity<?> getBusinessByRC(@ApiParam(value ="RC number", required = true) @PathVariable String rc){
